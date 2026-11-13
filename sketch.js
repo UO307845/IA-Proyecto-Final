@@ -38,7 +38,6 @@ function draw() {
   if (detector.hands) {
     interfaz.setHands(detector.hands);
     
-    // AQUÍ ESTABA EL DETALLE: Actualizar las manos para que drawer pueda dibujar
     if (typeof drawer.updateHands === 'function') {
       drawer.updateHands(detector.hands);
     }

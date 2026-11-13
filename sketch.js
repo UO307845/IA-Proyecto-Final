@@ -34,5 +34,9 @@ function draw() {
   image(video, 0, 0, width, height);
   
   detector.procesar();
+  
+  interfaz.setHands(detector.hands);
+  interfaz.draw();
+  
   drawer.draw();
 }

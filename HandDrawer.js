@@ -10,7 +10,6 @@ class HandDrawer {
   }
 
   setup() {
-   
     this.canvasGraphics = createGraphics(this.w, this.h);
   }
 
@@ -47,7 +46,7 @@ class HandDrawer {
 
       } else {
         let indexFinger = hand.keypoints[8];
-        let x = width - indexFinger.x;
+        let x = indexFinger.x;
         let y = indexFinger.y;
 
         if (this.px !== -1 && this.py !== -1) {

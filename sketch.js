@@ -7,7 +7,7 @@ let interfaz;
 function preload() {
   handPose = ml5.handPose({ maxHands: 1 });
   drawer = new HandDrawer(640, 480);
-  drawer.preload();
+
 }
 
 

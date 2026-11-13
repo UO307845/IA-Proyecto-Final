@@ -2,6 +2,7 @@ let video;
 let handPose;
 let detector;
 let drawer;
+let interfaz;
 
 function preload() {
   handPose = ml5.handPose({ maxHands: 1 });
@@ -18,6 +19,7 @@ function setup() {
   video.hide();
 
   detector = new DeteccionManos();
+  interfaz = new HandInterface();
   handPose.detectStart(video, (results) => detector.gotHands(results));
 
   strokeWeight(4);
